@@ -1,4 +1,4 @@
-<h1 align="center">心理测试及数据分析平台--后端部分</h1>
+<h1 align="center">心理健康管理与数据分析平台--后端部分</h1>
 
 <p align="center">
 <img alt="Author" src="https://img.shields.io/badge/Author-Sirice-blue.svg"/>
@@ -6,7 +6,6 @@
 <img alt="springboot" src="https://img.shields.io/badge/framework-SpringBoot-brightgreen.svg"/>
 </p>
 
-> 本项目为毕设自用。
 
 <small>Author:Sirice</small>
 
@@ -183,31 +182,4 @@ User
 
 + 数据分类图表显示
 + 历史记录测量心理状态变化
-
-### DB config
-```yaml
-server:
-  port: 8080
-
-spring:
-    datasource:
-        name: psytest
-        url: jdbc:mysql://localhost:3306/psytest?serverTimezone=GMT%2B8&characterEncoding=utf8
-        username: root
-        password: root
-        driver-class-name: com.mysql.cj.jdbc.Driver
-    thymeleaf:
-      cache: true # 缓存
-
-    devtools:
-      restart:
-        enabled: true  # 热部署开启
-        additional-paths: src/main/java # 监听目录
-mybatis:
-  mapper-locations: classpath:mapping/*Mapper.xml
-  type-aliases-package: com.psytest.myproject
-  # 开启驼峰映射
-  configuration:
-    map-underscore-to-camel-case: true
-```
 
